@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Primeira View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Primeira View" id="BYZ-38-t0r" customClass="ViewController" customModule="Navegacao" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMc-iN-egg">
+                                <rect key="frame" x="240" y="50" width="95" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Próxima">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.25098425149999998" green="0.25097340350000003" blue="0.25098079439999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="showSecondScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jkl-gI-7B2"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iIt-SA-rcH">
+                                <rect key="frame" x="62.5" y="150" width="250" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="XwK-ZJ-sub"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="KMc-iN-egg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Ebd-cQ-bpZ"/>
+                            <constraint firstItem="KMc-iN-egg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="nFR-Qg-dP9"/>
+                            <constraint firstItem="iIt-SA-rcH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="vky-aT-9ZQ"/>
+                            <constraint firstItem="iIt-SA-rcH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zHQ-oI-Uv7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="gex-uQ-xmm" kind="show" identifier="toSegundaView" id="SoJ-Zx-6g6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.6" y="53.523238380809602"/>
+        </scene>
+        <!--Segunda View-->
+        <scene sceneID="MCb-gH-BwR">
+            <objects>
+                <viewController title="Segunda View" modalPresentationStyle="fullScreen" id="gex-uQ-xmm" customClass="SecondViewController" customModule="Navegacao" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TeG-e4-Syn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0D-ww-rxR">
+                                <rect key="frame" x="240" y="50" width="95" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Próxima">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.25098425149999998" green="0.25097340350000003" blue="0.25098079439999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="showThirdScreen:" destination="gex-uQ-xmm" eventType="touchUpInside" id="v8B-ue-nvL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpW-bA-bdz">
+                                <rect key="frame" x="50" y="50" width="75" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Voltar">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.25098425149999998" green="0.25097340350000003" blue="0.25098079439999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="showFirstScreen:" destination="gex-uQ-xmm" eventType="touchUpInside" id="GhH-gk-IEe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RLC-Pd-K1R"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="f0D-ww-rxR" firstAttribute="centerX" secondItem="TeG-e4-Syn" secondAttribute="centerX" constant="100" id="5OA-Sq-2II"/>
+                            <constraint firstItem="wpW-bA-bdz" firstAttribute="centerX" secondItem="TeG-e4-Syn" secondAttribute="centerX" constant="-100" id="Bnz-XS-9Ob"/>
+                            <constraint firstItem="f0D-ww-rxR" firstAttribute="top" secondItem="RLC-Pd-K1R" secondAttribute="top" constant="50" id="DyU-03-jXh"/>
+                            <constraint firstItem="wpW-bA-bdz" firstAttribute="top" secondItem="RLC-Pd-K1R" secondAttribute="top" constant="50" id="cjh-lu-Jvi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2XV-Wn-9MD"/>
+                    <connections>
+                        <segue destination="yjA-Ke-Bl9" kind="show" identifier="toTerceiraView" id="8gg-Fq-huF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zTI-RY-9K3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="54"/>
+        </scene>
+        <!--Terceira View-->
+        <scene sceneID="xID-Zs-54d">
+            <objects>
+                <viewController title="Terceira View" modalPresentationStyle="fullScreen" id="yjA-Ke-Bl9" customClass="ThirdViewController" customModule="Navegacao" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yWY-id-oTW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae0-0g-LMk">
+                                <rect key="frame" x="101.5" y="50" width="172.5" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Voltar para Tela 1">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.25098425149999998" green="0.25097340350000003" blue="0.25098079439999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="XVb-EX-xM9" kind="unwind" unwindAction="unwindFirstScreenFor:towards:" id="J5I-d8-Mo8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsv-vw-YH6">
+                                <rect key="frame" x="100" y="138" width="175" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Voltar para Tela 2">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.25098425149999998" green="0.25097340350000003" blue="0.25098079439999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="showSecondScreen:" destination="yjA-Ke-Bl9" eventType="touchUpInside" id="puX-XG-Aw3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NPh-jO-Y75"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="Qsv-vw-YH6" firstAttribute="top" secondItem="ae0-0g-LMk" secondAttribute="bottom" constant="50" id="Yum-du-Lan"/>
+                            <constraint firstItem="ae0-0g-LMk" firstAttribute="centerX" secondItem="yWY-id-oTW" secondAttribute="centerX" id="ddo-Jr-aS2"/>
+                            <constraint firstItem="ae0-0g-LMk" firstAttribute="top" secondItem="NPh-jO-Y75" secondAttribute="top" constant="50" id="fph-ZW-I4C"/>
+                            <constraint firstItem="Qsv-vw-YH6" firstAttribute="centerX" secondItem="yWY-id-oTW" secondAttribute="centerX" id="rJN-Op-hcM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MGU-g5-Goe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CyG-bp-oDx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="XVb-EX-xM9" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1386" y="54"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

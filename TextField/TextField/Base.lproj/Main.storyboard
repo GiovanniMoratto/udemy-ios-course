@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTN-H9-FNi">
+                                <rect key="frame" x="50" y="114" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="namePhonePad" textContentType="name"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu e-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bxu-X1-i1W">
+                                <rect key="frame" x="50" y="178" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v7O-Fz-8hf">
+                                <rect key="frame" x="50" y="242" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="new-password"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu telefone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8fS-fI-al4">
+                                <rect key="frame" x="50" y="306" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu CEP" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Iz-E1-1cr">
+                                <rect key="frame" x="50" y="370" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="postal-code"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu endereço" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ke-eS-mUp">
+                                <rect key="frame" x="50" y="434" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="street-address"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu estado" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mwZ-dI-nka">
+                                <rect key="frame" x="50" y="498" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="address-level1"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu cartão de crédito" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aAB-wS-C5v">
+                                <rect key="frame" x="50" y="562" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="cc-number"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="WTN-H9-FNi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="3pE-kj-eOj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aAB-wS-C5v" secondAttribute="trailing" constant="50" id="4Fb-Rz-S7E"/>
+                            <constraint firstItem="8fS-fI-al4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="4cb-r4-WRU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WTN-H9-FNi" secondAttribute="trailing" constant="50" id="7KB-aZ-1CP"/>
+                            <constraint firstItem="v7O-Fz-8hf" firstAttribute="top" secondItem="Bxu-X1-i1W" secondAttribute="bottom" constant="30" id="80e-Oc-XX0"/>
+                            <constraint firstItem="8Iz-E1-1cr" firstAttribute="top" secondItem="8fS-fI-al4" secondAttribute="bottom" constant="30" id="BJz-f9-tNt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8fS-fI-al4" secondAttribute="trailing" constant="50" id="BSo-tQ-Vi3"/>
+                            <constraint firstItem="aAB-wS-C5v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="FeJ-o3-Z4E"/>
+                            <constraint firstItem="Bxu-X1-i1W" firstAttribute="top" secondItem="WTN-H9-FNi" secondAttribute="bottom" constant="30" id="FsC-Zu-HN2"/>
+                            <constraint firstItem="4ke-eS-mUp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="IuW-uU-P0E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bxu-X1-i1W" secondAttribute="trailing" constant="50" id="JEK-ez-h8w"/>
+                            <constraint firstItem="4ke-eS-mUp" firstAttribute="top" secondItem="8Iz-E1-1cr" secondAttribute="bottom" constant="30" id="Kne-za-JFD"/>
+                            <constraint firstItem="mwZ-dI-nka" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PKe-mS-x00"/>
+                            <constraint firstItem="v7O-Fz-8hf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="QN2-dR-6yF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mwZ-dI-nka" secondAttribute="trailing" constant="50" id="Sqh-yj-XvZ"/>
+                            <constraint firstItem="mwZ-dI-nka" firstAttribute="top" secondItem="4ke-eS-mUp" secondAttribute="bottom" constant="30" id="XQm-ky-pEF"/>
+                            <constraint firstItem="Bxu-X1-i1W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yy5-Xz-QTL"/>
+                            <constraint firstItem="WTN-H9-FNi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="ZlS-iO-D6f"/>
+                            <constraint firstItem="8fS-fI-al4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a8t-Cc-fbz"/>
+                            <constraint firstItem="mwZ-dI-nka" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="bh9-DS-Vu8"/>
+                            <constraint firstItem="8fS-fI-al4" firstAttribute="top" secondItem="v7O-Fz-8hf" secondAttribute="bottom" constant="30" id="bto-Up-OdL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v7O-Fz-8hf" secondAttribute="trailing" constant="50" id="dbo-Ri-VfB"/>
+                            <constraint firstItem="8Iz-E1-1cr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eIj-lO-xzh"/>
+                            <constraint firstItem="v7O-Fz-8hf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f1f-s3-7Y4"/>
+                            <constraint firstItem="aAB-wS-C5v" firstAttribute="top" secondItem="mwZ-dI-nka" secondAttribute="bottom" constant="30" id="iCm-Mu-7fm"/>
+                            <constraint firstItem="Bxu-X1-i1W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="iGh-uj-kSG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4ke-eS-mUp" secondAttribute="trailing" constant="50" id="je2-Z5-8dF"/>
+                            <constraint firstItem="4ke-eS-mUp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ofe-Xa-oaR"/>
+                            <constraint firstItem="WTN-H9-FNi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q0t-vu-Hdi"/>
+                            <constraint firstItem="8Iz-E1-1cr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="qrG-IT-4Dr"/>
+                            <constraint firstItem="aAB-wS-C5v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t5D-7r-4HM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Iz-E1-1cr" secondAttribute="trailing" constant="50" id="zJv-t7-tBq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="50"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
